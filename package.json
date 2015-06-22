@@ -1,0 +1,14 @@
+{
+  "name": "Ant",
+  "description": "Ant",
+  "author": "antivor.ru",
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "connect": "^3.3.4",
+    "connect-basic-auth": "^0.1.0",
+    "express": "^4.12.3",
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
