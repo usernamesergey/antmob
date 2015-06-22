@@ -6,7 +6,7 @@ var app = express();
 
 app
 	.use(basicAuth(function(credentials, req, res, next) {
-		var key = '0f959314baccfe797119bd9320b46cd8';
+		var key = '711106e99b6713b3e4ad0942eeb5e00e';
 		var result = (key == md5(md5(credentials.username)) && key == md5(md5(credentials.password)));
 
 		// if(result){
