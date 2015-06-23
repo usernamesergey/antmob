@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/ant.css">
+    <link rel="stylesheet" type="text/css" href="vendors/prism/css/prism.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,7 +10,9 @@
   <body>
     <div class="w-menu">
       <div class="m-menu">
-        <div class="m-menu-user"><img src="i/map-marker.png"></div>
+        <div class="m-menu-user"><img src="i/map-marker.png" class="city">
+          <h3>Москва</h3><span class="small">(изменить)</span>
+        </div>
         <h3 class="m-menu-header">Каталог</h3><a href="/rstat.html"><span class="item-image image1"></span>Подсчет посетителей</a><a href="/zaschita-na-stellajah.html"><span class="item-image image2"></span>Защита на стеллажах</a><a href="/detexline.html"><span class="item-image image3"></span>Противокражное оборудование</a><a href="/metallodetektoryi.html"><span class="item-image image4"></span>Металлодетекторы</a><a href="/zaschitnyie-boksyi.html"><span class="item-image image5"></span>Защитные Боксы</a><a href="/kryuchki.html"><span class="item-image image6"></span>Защитные крючки</a><a href="/zerkala.html"><span class="item-image image7"></span>Зеркала</a><a href="/idlogic.html"><span class="item-image image8"></span>RFID</a>
         <h3 class="m-menu-header">Компания</h3><a href="/o-kompanii.html">О компании</a><a href="/o-kompanii.html">Технический центр</a><a href="/o-kompanii.html">Дилерам</a><a href="/o-kompanii.html">Пресс-центр</a><a href="/o-kompanii.html">О компании</a><a href="/o-kompanii.html">Новости</a><a href="/o-kompanii.html">Статьи</a><a href="/o-kompanii.html">Контакты</a><a href="/o-kompanii.html">Фотогалерея</a>
       </div>
@@ -26,7 +29,35 @@
         <button type="button" class="m-button m-close"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         <div data-toggle="modal" data-target="#callback" class="callback"><img src="i/callback.png" width="40" height="40"><span class="callback-text">Заказать<br>звонок</span></div>
       </header>
-      <div class="contaner"></div>
+      <div class="container">
+        <h1>h1.Заголовок</h1>
+        <h2>h2.Заголовок</h2>
+        <h3>h3.Заголовок</h3>
+        <h4>h4.Заголовок</h4>
+        <h5>h5.Заголовок</h5>
+        <h6>h6.Заголовок</h6><a>ссылка</a>
+        <p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание форм развития. Повседневная практика показывает, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.</p>
+        <div class="element-grid">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6"><a href="test-page.html" class="element"><img src="http://lorempixel.com/400/325/technics/?r=0" class="element-image img-responsive">
+                <div class="element-title">Защита товаров</div></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><a href="test-page.html" class="element"><img src="http://lorempixel.com/400/325/technics/?r=1" class="element-image img-responsive">
+                <div class="element-title">Защита открытой выкладки</div></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><a href="test-page.html" class="element"><img src="http://lorempixel.com/400/325/technics/?r=2" class="element-image img-responsive">
+                <div class="element-title">Датчик</div></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><a href="test-page.html" class="element"><img src="http://lorempixel.com/400/325/technics/?r=3" class="element-image img-responsive">
+                <div class="element-title">RFID - системы бесконтактной идентификации</div></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Ссылки внутри блока</h2>
+        <div class="element-list"><a href="test-page.html" class="element">Противокражные системы<br><span>премиум-класса</span></a><a href="test-page.html" class="element">Противокражные системы<br><span>бизнес-класса</span></a><a href="test-page.html" class="element">Противокражные системы<br> со встроенным<br><span>металлодeтектором</span></a></div>
+      </div>
+      <div class="container">
+        <h2>Ссылки вне блока</h2>
+      </div>
+      <div class="element-list"><a href="test-page.html" class="element">Противокражные системы<br><span>премиум-класса</span></a><a href="test-page.html" class="element">Противокражные системы<br><span>бизнес-класса</span></a><a href="test-page.html" class="element">Противокражные системы<br> со встроенным<br><span>металлодeтектором</span></a></div>
       <footer>
         <div class="container">
           <div class="section-get-catalog">
@@ -43,9 +74,10 @@
           </div>
         </div>
       </footer>
-      <script src="vendors/jquery/jquery.min.js" deffered="deffered"></script>
-      <script src="js/ant.js" async="async"></script>
-      <script src="vendors/bootstrap/js/bootstrap.min.js" async="async"></script>
+      <script src="vendors/jquery/jquery.min.js"></script>
+      <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendors/prism/js/prism.min.js"></script>
+      <script src="js/ant.js"></script>
     </div>
   </body>
 </html>

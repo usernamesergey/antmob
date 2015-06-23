@@ -1,2 +1,12 @@
+//Можно использовать Бутстраповские переменные
 @color: #333;
-@linkcolor: #red;
+@linkcolor: rgb(210, 0, 0);
+@linkcolor-hover: darken(@linkcolor, 10%);
+
+a {
+	color: @linkcolor;
+
+	&:hover {
+		color: @linkcolor-hover;
+	}
+}
